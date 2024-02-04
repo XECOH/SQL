@@ -1,0 +1,5 @@
+/* 조건에 부합하는 중고거래 댓글 조회 (Comments that meet conditions) */
+SELECT *
+  FROM USED_GOODS_BOARD A INNER JOIN USED_GOODS_REPLY B
+    ON A.BOARD_ID = B.BOARD_ID
+ WHERE TO_CHAR(A.CREATED_DATE, 'YYYYMM') = '202210'
